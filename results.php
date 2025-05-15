@@ -1,52 +1,52 @@
 <?php
 	// get the indexes of refraction from the textfields
-    $size = $_POST['size'];
-    $meat = $_POST['meatToppings'];
-    $veggies = $_POST['veggieToppings'];
-    $sauce = $_POST['sauce'];
-    $extra = $_POST['extras'];
+    $size = $_POST['size'] ?? "No size" ?? "Limited" ?? "Great" ?? "Monster";
+    $meat = $_POST['meatToppings'] ?? "No Meat" ?? "Any Meat";
+    $veggies = $_POST['veggieToppings'] ?? "No Veggies" ?? "Any Veggies";
+    $sauce = $_POST['sauce'] ?? "No Sauce" ?? "Any Sauce";
+    $extra = $_POST['extras'] ?? "No Extra" ?? "Any Extra";
 	// calculate the speed of light in diamond and water
-    const SIZE_LIMITED = 7.75;
-    const SIZE_GREAT = 9.75;
-    const SIZE_MONSTER = 14.25;
-    const MEAT_PRICE = 2.99;
-    const VEGGIES_PRICE = 0.99;
-    const SAUCE_PRICE = 0.50;
-    const EXTRA_PRICE = 1.99;
-    const TAX = 0.13;
-    $subtotal1 = SIZE_LIMITED + MEAT_PRICE + VEGGIES_PRICE + SAUCE_PRICE + EXTRA_PRICE;
-    $subtotal2 = SIZE_GREAT + MEAT_PRICE + VEGGIES_PRICE + SAUCE_PRICE + EXTRA_PRICE;
-    $subtotal3 = SIZE_MONSTER + MEAT_PRICE + VEGGIES_PRICE + SAUCE_PRICE + EXTRA_PRICE;
-    $tax1 = $subtotal1 * TAX;
-    $tax2 = $subtotal2 * TAX;
-    $tax3 = $subtotal3 * TAX;
-    $total1 = $subtotal + $tax1;
-    $total2 = $subtotal + $tax2;
-    $total3 = $subtotal + $tax3;
+    $sizeLimited = 7.75;
+    $sizeGreat  = 9.75;
+    $sizeMonster = 14.25;
+    $meatPrice = 2.99;
+    $veggiesPrice = 0.99;
+    $saucePrice = 0.50;
+    $extrasPrice = 1.99;
+    $tax = 0.13;
+    $subtotal1 = $sizeLimited + $meatPrice + $veggiesPrice + $saucePrice + $extrasPrice;
+    $subtotal2 = $sizeGreat + $meatPrice + $veggiesPrice + $saucePrice + $extrasPrice;
+    $subtotal3 = $sizeMonster + $meatPrice + $veggiesPrice + $saucePrice + $extrasPrice;
+    $tax1 = $subtotal1 * $tax;
+    $tax2 = $subtotal2 * $tax;
+    $tax3 = $subtotal3 * $tax;
+    $total1 = $subtotal1 + $tax1;
+    $total2 = $subtotal2 + $tax2;
+    $total3 = $subtotal3 + $tax3;
 
     if ($size == "Limited" && $meat == "Any Meat" && $veggies == "Any Veggies" && $sauce == "Any Sauce" && $extra == "Any Extra") {
-        echo "Subtotal = {$subtotal1}";
-        echo "Tax = {$tax1}";
-        echo "Total = {$total1}";
+        echo "Subtotal = ${$subtotal1}";
+        echo "Tax = ${$tax1}";
+        echo "Total = ${$total1}";
     }
     elseif ($size == "Great" && $meat == "Any Meat" && $veggies == "Any Veggies" && $sauce == "Any Sauce" && $extra == "Any Extra") {
-        echo "Subtotal = {$subtotal2}";
-        echo "Tax = {$tax2}";
-        echo "Total = {$total2}";
+        echo "Subtotal = ${$subtotal2}";
+        echo "Tax = ${$tax2}";
+        echo "Total = ${$total2}";
     } 
     elseif ($size == "Monster" && $meat == "Any Meat" && $veggies == "Any Veggies" && $sauce == "Any Sauce" && $extra == "Any Extra") {
-        echo "Subtotal = {$subtotal3}";
-        echo "Tax = {$tax3}";
-        echo "Total = {$total3}";
+        echo "Subtotal = ${$subtotal3}";
+        echo "Tax = ${$tax3}";
+        echo "Total = ${$total3}";
     }
     elseif ($size == "Limited" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
-        echo "Your total is {SIZE_LIMITED}";
+        echo "Your total is ${$sizeLimited}";
     }
     elseif ($size == "Great" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
-        echo "Your total is {SIZE_GREAT}";
+        echo "Your total is ${$sizeGreat}";
     }
     elseif ($size == "Monster" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
-        echo "Your total is {SIZE_MONSTER}";
+        echo "Your total is ${$sizeMonster}";
     }
     elseif ($size == "No size" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
         echo "Please place your order";
