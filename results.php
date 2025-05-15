@@ -1,11 +1,11 @@
 <?php
 	// get the indexes of refraction from the textfields
-    $size = $_POST['size'] ?? "No size" ?? "Limited" ?? "Great" ?? "Monster";
-    $meat = $_POST['meatToppings'] ?? "No Meat" ?? "Any Meat";
-    $veggies = $_POST['veggieToppings'] ?? "No Veggies" ?? "Any Veggies";
-    $sauce = $_POST['sauce'] ?? "No Sauce" ?? "Any Sauce";
-    $extra = $_POST['extras'] ?? "No Extra" ?? "Any Extra";
-	// calculate the speed of light in diamond and water
+    $size = $_POST['size'] || "No size" || "Limited" || "Great" || "Monster";
+    $meat = $_POST['meatToppings'] || "No Meat" || "Any Meat";
+    $veggies = $_POST['veggieToppings'] || "No Veggies" || "Any Veggies";
+    $sauce = $_POST['sauce'] || "No Sauce" || "Any Sauce";
+    $extra = $_POST['extras'] || "No Extra" || "Any Extra";
+	// calculate the subtotal, tax, and total
     $sizeLimited = 7.75;
     $sizeGreat  = 9.75;
     $sizeMonster = 14.25;
@@ -55,8 +55,4 @@
         echo "Invalid order.";
         exit;
     }
-	// display the results
-    echo "<h3>Total:</h3>";
-    echo "Your {$speedLightDiamond} m/s.<br>";
-    echo "The speed of light in water is {$speedLightWater} m/s.";
 ?>
