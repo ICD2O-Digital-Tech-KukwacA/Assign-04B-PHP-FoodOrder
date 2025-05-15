@@ -1,11 +1,11 @@
 <?php
 	// get the indexes of refraction from the textfields
+    $size = $_POST['size'];
     $meat = $_POST['meat'];
     $veggies = $_POST['veggies'];
     $sauce = $_POST['sauce'];
     $extra = $_POST['extra'];
 	// calculate the speed of light in diamond and water
-    let $userOrder = $_POST['userOrder'];
     const SIZE_LIMITED = 7.75;
     const SIZE_GREAT = 9.75;
     const SIZE_MONSTER = 14.25;
@@ -24,31 +24,31 @@
     $total2 = $subtotal + $tax2;
     $total3 = $subtotal + $tax3;
 
-    if ($userOrder == "Limited" && $meat == "Any Meat" && $veggies == "Any Veggies" && $sauce == "Any Sauce" && $extra == "Any Extra") {
+    if ($size == "Limited" && $meat == "Any Meat" && $veggies == "Any Veggies" && $sauce == "Any Sauce" && $extra == "Any Extra") {
         echo "Subtotal = {$subtotal1}";
         echo "Tax = {$tax1}";
         echo "Total = {$total1}";
     }
-    elseif ($userOrder == "Great" && $meat == "Any Meat" && $veggies == "Any Veggies" && $sauce == "Any Sauce" && $extra == "Any Extra") {
+    elseif ($size == "Great" && $meat == "Any Meat" && $veggies == "Any Veggies" && $sauce == "Any Sauce" && $extra == "Any Extra") {
         echo "Subtotal = {$subtotal2}";
         echo "Tax = {$tax2}";
         echo "Total = {$total2}";
     } 
-    elseif ($userOrder == "Monster" && $meat == "Any Meat" && $veggies == "Any Veggies" && $sauce == "Any Sauce" && $extra == "Any Extra") {
+    elseif ($size == "Monster" && $meat == "Any Meat" && $veggies == "Any Veggies" && $sauce == "Any Sauce" && $extra == "Any Extra") {
         echo "Subtotal = {$subtotal3}";
         echo "Tax = {$tax3}";
         echo "Total = {$total3}";
     }
-    elseif ($userOrder == "Limited" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
+    elseif ($size == "Limited" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
         echo "Your total is {$subtotal1}";
     }
-    elseif ($userOrder == "Great" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
+    elseif ($size == "Great" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
         echo "Your total is {$subtotal2}";
     }
-    elseif ($userOrder == "Monster" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
+    elseif ($size == "Monster" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
         echo "Your total is {$subtotal3}";
     }
-    elseif ($userOrder == "No size" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
+    elseif ($size == "No size" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
         echo "Please place your order";
     }
     else {
