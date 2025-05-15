@@ -17,13 +17,13 @@
     $extraPrice = 0;
     // set the prices for each size
     if ($size == "Limited") {
-        $sizePrice = 5.99;
+        $sizePrice = 7.75;
     }
     elseif ($size == "Great") {
-        $sizePrice = 7.99;
+        $sizePrice = 9.75;
     }
     elseif ($size == "Monster") {
-        $sizePrice = 9.99;
+        $sizePrice = 14.25;
     }
     else {
         echo "Invalid size.";
@@ -73,22 +73,6 @@
         echo "Invalid extra.";
         exit;
     }
-    // calculate the subtotal
-    $subtotal = $sizePrice + $meatPrice + $veggiePrice + $saucePrice + $extraPrice;
-    // calculate the tax
-    $tax = $subtotal * $taxRate;
-    // calculate the total
-    $total = $subtotal + $tax;
-    // display the results
-    echo "<h1>Your Order</h1>";
-    echo "<p>Size: $size</p>";
-    echo "<p>Meat: $meat</p>";
-    echo "<p>Veggies: $veggies</p>";
-    echo "<p>Sauce: $sauce</p>";
-    echo "<p>Extra: $extra</p>";
-    echo "<p>Subtotal: $" . number_format($subtotal, 2) . "</p>";
-    echo "<p>Tax: $" . number_format($tax, 2) . "</p>";
-    echo "<p>Total: $" . number_format($total, 2) . "</p>";
     // display the results based on the order
     if ($size == "Limited" && $meat == "Any Meat" && $veggies == "Any Veggies" && $sauce == "Any Sauce" && $extra == "Any Extra") {
         echo "Subtotal = ${}";
@@ -123,5 +107,20 @@
         echo "Invalid order.";
         exit;
     }
-
+    // calculate the subtotal
+    $subtotal = $sizePrice + $meatPrice + $veggiePrice + $saucePrice + $extraPrice;
+    // calculate the tax
+    $tax = $subtotal * $taxRate;
+    // calculate the total
+    $total = $subtotal + $tax;
+    // display the results
+    echo "<h1>Your Order</h1>";
+    echo "<p>Size: $size</p>";
+    echo "<p>Meat: $meat</p>";
+    echo "<p>Veggies: $veggies</p>";
+    echo "<p>Sauce: $sauce</p>";
+    echo "<p>Extra: $extra</p>";
+    echo "<p>Subtotal: $" . number_format($subtotal, 2) . "</p>";
+    echo "<p>Tax: $" . number_format($tax, 2) . "</p>";
+    echo "<p>Total: $" . number_format($total, 2) . "</p>";
 ?>
