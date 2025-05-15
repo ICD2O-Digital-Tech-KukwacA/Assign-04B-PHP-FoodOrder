@@ -1,19 +1,19 @@
 <?php
 	// get the indexes of refraction from the textfields
     $size = $_POST['size'];
-    $meat = $_POST['meat'];
-    $veggies = $_POST['veggies'];
+    $meat = $_POST['meatToppings'];
+    $veggies = $_POST['veggieToppings'];
     $sauce = $_POST['sauce'];
-    $extra = $_POST['extra'];
+    $extra = $_POST['extras'];
 	// calculate the speed of light in diamond and water
-    const SIZE_LIMITED = 7.75;
-    const SIZE_GREAT = 9.75;
-    const SIZE_MONSTER = 14.25;
-    const MEAT_PRICE = 2.99;
-    const VEGGIES_PRICE = 0.99;
-    const SAUCE_PRICE = 0.50;
-    const EXTRA_PRICE = 1.99;
-    const TAX = 0.13;
+    const $SIZE_LIMITED = 7.75;
+    const $SIZE_GREAT = 9.75;
+    const $SIZE_MONSTER = 14.25;
+    const $MEAT_PRICE = 2.99;
+    const $VEGGIES_PRICE = 0.99;
+    const $SAUCE_PRICE = 0.50;
+    const $EXTRA_PRICE = 1.99;
+    const $TAX = 0.13;
     $subtotal1 = SIZE_LIMITED + MEAT_PRICE + VEGGIES_PRICE + SAUCE_PRICE + EXTRA_PRICE;
     $subtotal2 = SIZE_GREAT + MEAT_PRICE + VEGGIES_PRICE + SAUCE_PRICE + EXTRA_PRICE;
     $subtotal3 = SIZE_MONSTER + MEAT_PRICE + VEGGIES_PRICE + SAUCE_PRICE + EXTRA_PRICE;
@@ -40,13 +40,13 @@
         echo "Total = {$total3}";
     }
     elseif ($size == "Limited" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
-        echo "Your total is {$subtotal1}";
+        echo "Your total is {SIZE_LIMITED}";
     }
     elseif ($size == "Great" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
-        echo "Your total is {$subtotal2}";
+        echo "Your total is {SIZE_GREAT}";
     }
     elseif ($size == "Monster" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
-        echo "Your total is {$subtotal3}";
+        echo "Your total is {SIZE_MONSTER}";
     }
     elseif ($size == "No size" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
         echo "Please place your order";
