@@ -6,14 +6,14 @@
     $sauce = $_POST['sauce'];
     $extra = $_POST['extras'];
 	// calculate the speed of light in diamond and water
-    const $SIZE_LIMITED = 7.75;
-    const $SIZE_GREAT = 9.75;
-    const $SIZE_MONSTER = 14.25;
-    const $MEAT_PRICE = 2.99;
-    const $VEGGIES_PRICE = 0.99;
-    const $SAUCE_PRICE = 0.50;
-    const $EXTRA_PRICE = 1.99;
-    const $TAX = 0.13;
+    const SIZE_LIMITED = 7.75;
+    const SIZE_GREAT = 9.75;
+    const SIZE_MONSTER = 14.25;
+    const MEAT_PRICE = 2.99;
+    const VEGGIES_PRICE = 0.99;
+    const SAUCE_PRICE = 0.50;
+    const EXTRA_PRICE = 1.99;
+    const TAX = 0.13;
     $subtotal1 = SIZE_LIMITED + MEAT_PRICE + VEGGIES_PRICE + SAUCE_PRICE + EXTRA_PRICE;
     $subtotal2 = SIZE_GREAT + MEAT_PRICE + VEGGIES_PRICE + SAUCE_PRICE + EXTRA_PRICE;
     $subtotal3 = SIZE_MONSTER + MEAT_PRICE + VEGGIES_PRICE + SAUCE_PRICE + EXTRA_PRICE;
