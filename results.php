@@ -1,10 +1,10 @@
 <?php
 	// get the indexes of refraction from the textfields
-    $size = $_POST['size'] || "No size" || "Limited" || "Great" || "Monster";
-    $meat = $_POST['meatToppings'] || "No Meat" || "Any Meat";
-    $veggies = $_POST['veggieToppings'] || "No Veggies" || "Any Veggies";
-    $sauce = $_POST['sauce'] || "No Sauce" || "Any Sauce";
-    $extra = $_POST['extras'] || "No Extra" || "Any Extra";
+    $size = $_POST['size'] ||;
+    $meat = $_POST['meatToppings'];
+    $veggies = $_POST['veggieToppings'];
+    $sauce = $_POST['sauce'];
+    $extra = $_POST['extras'];
 	// calculate the subtotal, tax, and total
     $subtotal = 0;
     $tax = 0;
