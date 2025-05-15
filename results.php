@@ -1,10 +1,10 @@
 <?php
 	// get the indexes of refraction from the textfields
-    $size = $_POST['size'] || "No size" || "Limited" || "Great" || "Monster";
-    $meat = $_POST['meatToppings'] || "No Meat" || "Any Meat";
-    $veggies = $_POST['veggieToppings'] || "No Veggies" || "Any Veggies";
-    $sauce = $_POST['sauce'] || "No Sauce" || "Any Sauce";
-    $extra = $_POST['extras'] || "No Extra" || "Any Extra";
+    $size = $_POST['size'] ?? "No size" || "Limited" || "Great" || "Monster";
+    $meat = $_POST['meatToppings'] ?? "No Meat" || "Any Meat";
+    $veggies = $_POST['veggieToppings'] ?? "No Veggies" || "Any Veggies";
+    $sauce = $_POST['sauce'] ?? "No Sauce" || "Any Sauce";
+    $extra = $_POST['extras'] ?? "No Extra" || "Any Extra";
 	// calculate the subtotal, tax, and total
     $sizeLimited = 7.75;
     $sizeGreat  = 9.75;
@@ -40,7 +40,9 @@
         echo "Total = ${$total3}";
     }
     elseif ($size == "Limited" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
-        echo "Your total is ${$sizeLimited}";
+        echo "Subtotal = ${$sizeLimited}";
+        echo "Tax = ${$tax1}";
+        echo "Total = ${$sizeLimited}";
     }
     elseif ($size == "Great" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
         echo "Your total is ${$sizeGreat}";
