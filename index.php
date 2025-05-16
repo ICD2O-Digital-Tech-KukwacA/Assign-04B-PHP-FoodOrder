@@ -179,12 +179,9 @@
         <div id="$total"></div>
       </div>
       <div id="user-info">
-        <div id="$sizePrice"></div>
-        <div id="$meatPrice"></div>
-        <div id="$veggiesPrice"></div>
-        <div id="$saucePrice"></div>
-        <div id="$extrasPrice"></div>
-        <div id="$totalPrice"></div>
+        <div id="$subtotal"></div>
+        <div id="$hst"></div>
+        <div id="$total"></div>
       </div>
     </iframe>
   </body>
