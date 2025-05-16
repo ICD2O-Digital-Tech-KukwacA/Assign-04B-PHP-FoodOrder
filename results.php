@@ -1,127 +1,65 @@
-<?php
-	// get the indexes of refraction from the textfields
-    $size = $_POST['size'] ||;
+<?php 
+    // get the order from the form
+    $size = $_POST['size'];
+    $sizePrice = "";
     $meat = $_POST['meatToppings'];
-    $veggies = $_POST['veggieToppings'];
+    $meatPrice = "";
+    $veggie = $_POST['veggieToppings'];
+    $veggiePrice = "";
     $sauce = $_POST['sauce'];
-    $extra = $_POST['extras'];
-	// calculate the subtotal, tax, and total
+    $saucePrice = "";
+    $extras = $_POST['extras'];
+    $extrasPrice = "";
     $subtotal = 0;
     $tax = 0;
     $total = 0;
-    $taxRate = 0.13; // 13% tax rate
-    $sizePrice = 0;
-    $meatPrice = 0;
-    $veggiePrice = 0;
-    $saucePrice = 0;
-    $extraPrice = 0;
-    // set the prices for each size
-    if ($size == "Limited") {
-        $sizePrice = 7.75;
+    // set the constants for the prices
+    const LIMITED = 7.75;
+    const GREAT = 9.75;
+    const MONSTER = 14.25;
+    const MEAT_TOPPING = 2.99;
+    const VEGGIE_TOPPING = 1.99;
+    const SAUCE = 0.50;
+    const EXTRAS = 1.50;
+    // set the constants for the tax
+    const TAX = 0.13;
+    // set the constants for the sizes
+    const SMALL_SIZE = "Limited";
+    const MEDIUM_SIZE = "Great";
+    const LARGE_SIZE = "Monster";
+    $meatToppings = "Any meat topping";
+    $veggieToppings = "Any veggie topping";
+    $sauces = "Any sauce";
+    $extraToppings = "Any extras";
+    if ($size == SMALL_SIZE && $meat == $meatToppings && $veggie == $veggieToppings && $sauce == $sauces && $extras == $extraToppings) {
+        $subtotal = LIMITED + MEAT_TOPPING + VEGGIE_TOPPING + SAUCE + EXTRAS;
+        $tax = $subtotal * TAX;
+        $total = $subtotal + $tax;
     }
-    elseif ($size == "Great") {
-        $sizePrice = 9.75;
+    elseif ($size == MEDIUM_SIZE && $meat == $meatToppings && $veggie == $veggieToppings && $sauce == $sauces && $extras == $extraToppings) {
+        $subtotal = GREAT + MEAT_TOPPING + VEGGIE_TOPPING + SAUCE + EXTRAS;
+        $tax = $subtotal * TAX;
+        $total = $subtotal + $tax;
     }
-    elseif ($size == "Monster") {
-        $sizePrice = 14.25;
+    elseif ($size == LARGE_SIZE && $meat == $meatToppings && $veggie == $veggieToppings && $sauce == $sauces && $extras == $extraToppings) {
+        $subtotal = MONSTER + MEAT_TOPPING + VEGGIE_TOPPING + SAUCE + EXTRAS;
     }
-    else {
-        echo "Invalid size.";
-        exit;
+    elseif ($size == SMALL_SIZE && $meat != $meatToppings && $veggie != $veggieToppings && $sauce != $sauces && $extras != $extraToppings) {
+        $subtotal = LIMITED;
+        $tax = $subtotal * TAX;
+        $total = $subtotal + $tax;
     }
-    // set the prices for each meat topping
-    if ($meat == "Any Meat") {
-        $meatPrice = 2.99;
+    elseif ($size == MEDIUM_SIZE && $meat != $meatToppings && $veggie != $veggieToppings && $sauce != $sauces && $extras != $extraToppings) {
+        $subtotal = GREAT;
+        $tax = $subtotal * TAX;
+        $total = $subtotal + $tax;
     }
-    elseif ($meat == "No Meat") {
-        $meatPrice = 0;
-    }
-    else {
-        echo "Invalid meat topping.";
-        exit;
-    }
-    // set the prices for each veggie topping
-    if ($veggies == "Any Veggies") {
-        $veggiePrice = 1.99;
-    }
-    elseif ($veggies == "No Veggies") {
-        $veggiePrice = 0;
-    }
-    else {
-        echo "Invalid veggie topping.";
-        exit;
-    }
-    // set the prices for each sauce
-    if ($sauce == "Any Sauce") {
-        $saucePrice = 0.50;
-    }
-    elseif ($sauce == "No Sauce") {
-        $saucePrice = 0;
+    elseif ($size == LARGE_SIZE && $meat != $meatToppings && $veggie != $veggieToppings && $sauce != $sauces && $extras != $extraToppings) {
+        $subtotal = MONSTER;
+        $tax = $subtotal * TAX;
+        $total = $subtotal + $tax;
     }
     else {
-        echo "Invalid sauce.";
-        exit;
+        echo "Please place you order.";
     }
-    // set the prices for each extra
-    if ($extra == "Any Extra") {
-        $extraPrice = 1.99;
-    }
-    elseif ($extra == "No Extra") {
-        $extraPrice = 0;
-    }
-    else {
-        echo "Invalid extra.";
-        exit;
-    }
-    // calculate the subtotal
-    $subtotal = $sizePrice + $meatPrice + $veggiePrice + $saucePrice + $extraPrice;
-    // calculate the tax
-    $tax = $subtotal * $taxRate;
-    // calculate the total
-    $total = $subtotal + $tax;
-    
-    // display the results based on the order
-    if ($size == "Limited" && $meat == "Any Meat" && $veggies == "Any Veggies" && $sauce == "Any Sauce" && $extra == "Any Extra") {
-        echo "Subtotal = ${}";
-        echo "Tax = ${}";
-        echo "Total = ${}";
-    }
-    elseif ($size == "Great" && $meat == "Any Meat" && $veggies == "Any Veggies" && $sauce == "Any Sauce" && $extra == "Any Extra") {
-        echo "Subtotal = ${}";
-        echo "Tax = ${}";
-        echo "Total = ${}";
-    }
-    elseif ($size == "Monster" && $meat == "Any Meat" && $veggies == "Any Veggies" && $sauce == "Any Sauce" && $extra == "Any Extra") {
-        echo "Subtotal = ${}";
-        echo "Tax = ${}";
-        echo "Total = ${}";
-    }
-    elseif ($size == "Limited" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
-        echo "Subtotal = ${}";
-        echo "Tax = ${}";
-        echo "Total = ${}";
-    }
-    elseif ($size == "Great" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
-        echo "Your total is ${}";
-    }
-    elseif ($size == "Monster" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
-        echo "Your total is ${}";
-    }
-    elseif ($size == "No size" && $meat == "No Meat" && $veggies == "No Veggies" && $sauce == "No Sauce" && $extra == "No Extra") {
-        echo "Please place your order";
-    }
-    else {
-        echo "Invalid order.";
-        exit;
-    }
-    // display the results
-    echo "<h1>Your Order</h1>";
-    echo "<p>Size: $size</p>";
-    echo "<p>Meat: $meat</p>";
-    echo "<p>Veggies: $veggies</p>";
-    echo "<p>Sauce: $sauce</p>";
-    echo "<p>Extra: $extra</p>";
-    echo "<p>Subtotal: $" . number_format($subtotal, 2) . "</p>";
-    echo "<p>Tax: $" . number_format($tax, 2) . "</p>";
-    echo "<p>Total: $" . number_format($total, 2) . "</p>";
 ?>

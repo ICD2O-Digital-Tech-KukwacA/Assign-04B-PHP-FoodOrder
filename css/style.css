@@ -1,12 +1,8 @@
-/* Created by: Mr. Coxall
-* Created on: Sep 2020
-* This file contains the CSS for index.html
-*/
 /* Created by: MariaG
  * Modified by: Kukwac
- * Created on: April 2025
+ * Created on: May 2025
  * This CSS file defines the style for index.php
- * ICD2O-Unit3-03-PHP-VolumeSphere
+ * ICD2O-Assign-04B-PHP-FoodOrder
 */
 
 form {
@@ -14,6 +10,7 @@ form {
     padding: 20px;
     width: 80%;
     margin-left: 10%;
+    margin-right: 10%;
 }
 
 h1 {
@@ -43,6 +40,7 @@ iframe {
     padding: 20px;
     width: 80%;
     margin-left: 10%;
+    margin-right: 10%;
     margin-top: 15px;
 }
 

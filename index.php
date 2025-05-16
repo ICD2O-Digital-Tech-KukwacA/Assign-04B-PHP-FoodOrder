@@ -157,7 +157,7 @@
         <br>
       </table>
     <!-- form to get the indexes of refraction from the user -->
-    <form action="results.php" method="post" target="results">
+    <form action="./results.php" method="post" target="results">
       <h3>Place your order</h3>
       <label for="size">Size</label>
       <input type="text" id="size" name="size"><br><br>
