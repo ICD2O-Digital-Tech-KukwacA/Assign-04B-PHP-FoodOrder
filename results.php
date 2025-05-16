@@ -73,6 +73,7 @@
     } else {
         $extrasPrice = 0;
     }
+    
     // calculate the total price
     $subtotal = $sizePrice + $meatPrice + $veggiesPrice + $saucePrice + $extrasPrice;
     // calculate the HST

@@ -174,6 +174,18 @@
     </form>
     
     <!-- iframe for the results to show on the web page. -->
-    <iframe id="results" name="results" style="width:100%; height:150px;"></iframe>
+    <iframe id="results" name="results" style="width:100%; height:150px;">
+      <div id="user-info">
+        <div id="$total"></div>
+      </div>
+      <div id="user-info">
+        <div id="$sizePrice"></div>
+        <div id="$meatPrice"></div>
+        <div id="$veggiesPrice"></div>
+        <div id="$saucePrice"></div>
+        <div id="$extrasPrice"></div>
+        <div id="$totalPrice"></div>
+      </div>
+    </iframe>
   </body>
 </html>
