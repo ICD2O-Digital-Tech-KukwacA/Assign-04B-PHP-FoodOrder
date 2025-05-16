@@ -20,42 +20,42 @@
     $veggie = $_POST['veggieToppings'];
     $sauce = $_POST['sauce'];
     $extras = $_POST['extras'];
-    $subtotal = "";
-    $tax = "";
-    $total = "";
+    $subtotal = "$size + $meat + $veggie + $sauce + $extras";
+    $tax = "$subtotal * TAX";
+    $total = "$subtotal + $tax";
     $meatToppings = "Bacon || Pulled Pork || Ground Beef || Chicken Breast || Karaage Chicken || Popcorn Chicken || Philly Steak || Corn dog slices || Premium";
     $veggieToppings = "Caramelized Onions || Mushrooms || Green Pepper || Green Onions || Sun Dried Tomatoes || Jalapenos || Dill Pickles";
     $sauces = "B.B.Q || Sweet Mustard || Garlic Mayo || Burger Sauce || Sriracha || Buffalo || General TSO || Hot Honey || Ranch || Sweet Sriracha B.B.Q";
     $extraToppings = "Extra cheese curds || Extra gravy || Gluten free gravy";
     if ($size == SMALL_SIZE && $meat == $meatToppings && $veggie == $veggieToppings && $sauce == $sauces && $extras == $extraToppings) {
-        echo $subtotal = LIMITED + MEAT_TOPPING + VEGGIE_TOPPING + SAUCE + EXTRAS;
-        echo $tax = $subtotal * TAX;
-        echo $total = $subtotal + $tax;
+        echo "Total = $" + $subtotal;
+        echo "Tax = $" + $tax;
+        echo "Total = $" + $total;
     }
     elseif ($size == MEDIUM_SIZE && $meat == $meatToppings && $veggie == $veggieToppings && $sauce == $sauces && $extras == $extraToppings) {
-        echo $subtotal = GREAT + MEAT_TOPPING + VEGGIE_TOPPING + SAUCE + EXTRAS;
-        echo $tax = $subtotal * TAX;
-        echo $total = $subtotal + $tax;
+        echo "Total = $" + $subtotal;
+        echo "Tax = $" + $tax;
+        echo "Total = $" + $total;
     }
     elseif ($size == LARGE_SIZE && $meat == $meatToppings && $veggie == $veggieToppings && $sauce == $sauces && $extras == $extraToppings) {
-        echo $subtotal = MONSTER + MEAT_TOPPING + VEGGIE_TOPPING + SAUCE + EXTRAS;
-        echo $tax = $subtotal * TAX;
-        echo $total = $subtotal + $tax;
+        echo "Total = $" + $subtotal;
+        echo "Tax = $" + $tax;
+        echo "Total = $" + $total;
     }
     elseif ($size == SMALL_SIZE && $meat != $meatToppings && $veggie != $veggieToppings && $sauce != $sauces && $extras != $extraToppings) {
-        echo $subtotal = LIMITED;
-        echo $tax = $subtotal * TAX;
-        echo $total = $subtotal + $tax;
+        echo "Total = $" + $subtotal;
+        echo "Tax = $" + $tax;
+        echo "Total = $" + $total;
     }
     elseif ($size == MEDIUM_SIZE && $meat != $meatToppings && $veggie != $veggieToppings && $sauce != $sauces && $extras != $extraToppings) {
-        echo $subtotal = GREAT;
-        echo $tax = $subtotal * TAX;
-        echo$total = $subtotal + $tax;
+        echo "Total = $" + $subtotal;
+        echo "Tax = $" + $tax;
+        echo "Total = $" + $total;
     }
     elseif ($size == LARGE_SIZE && $meat != $meatToppings && $veggie != $veggieToppings && $sauce != $sauces && $extras != $extraToppings) {
-        echo $subtotal = MONSTER;
-        echo $tax = $subtotal * TAX;
-        echo $total = $subtotal + $tax;
+        echo "Total = $" + $subtotal;
+        echo "Tax = $" + $tax;
+        echo "Total = $" + $total;
     }
     else {
         echo "Please place you order.";
