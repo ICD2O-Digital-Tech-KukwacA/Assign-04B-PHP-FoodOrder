@@ -73,6 +73,13 @@
         echo "Invalid extra.";
         exit;
     }
+    // calculate the subtotal
+    $subtotal = $sizePrice + $meatPrice + $veggiePrice + $saucePrice + $extraPrice;
+    // calculate the tax
+    $tax = $subtotal * $taxRate;
+    // calculate the total
+    $total = $subtotal + $tax;
+    
     // display the results based on the order
     if ($size == "Limited" && $meat == "Any Meat" && $veggies == "Any Veggies" && $sauce == "Any Sauce" && $extra == "Any Extra") {
         echo "Subtotal = ${}";
@@ -107,12 +114,6 @@
         echo "Invalid order.";
         exit;
     }
-    // calculate the subtotal
-    $subtotal = $sizePrice + $meatPrice + $veggiePrice + $saucePrice + $extraPrice;
-    // calculate the tax
-    $tax = $subtotal * $taxRate;
-    // calculate the total
-    $total = $subtotal + $tax;
     // display the results
     echo "<h1>Your Order</h1>";
     echo "<p>Size: $size</p>";
