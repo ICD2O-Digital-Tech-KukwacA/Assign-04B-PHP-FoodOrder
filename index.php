@@ -176,9 +176,6 @@
     <!-- iframe for the results to show on the web page. -->
     <iframe id="results" name="results" style="width:100%; height:150px;">
       <div id="user-info">
-        <div id="$total"></div>
-      </div>
-      <div id="user-info">
         <div id="$subtotal"></div>
         <div id="$hst"></div>
         <div id="$total"></div>
