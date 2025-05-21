@@ -68,8 +68,6 @@
         $extrasPrice = EXTRAS_PRICE;
     } elseif ($extras == "Gluten-Free Gravy") {
         $extrasPrice = EXTRAS_PRICE;
-    } elseif ($extras == "None") {
-        $extrasPrice = 0;
     } else {
         $extrasPrice = 0;
     }
