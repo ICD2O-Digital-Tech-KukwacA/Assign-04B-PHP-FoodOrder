@@ -11,10 +11,6 @@
 
     // set the order from the form
     $size = $_POST['size'];
-    $meat = $_POST['meatToppings'];
-    $veggies = $_POST['veggiesToppings'];
-    $sauce = $_POST['sauce'];
-    $extras = $_POST['extras'];
 
      // calculate the total price
     $subtotal = $sizePrice + $meatPrice + $veggiesPrice + $saucePrice + $extrasPrice;
@@ -29,60 +25,4 @@
     // format the total price with HST
     $totalPriceWithHST = number_format($totalPriceWithHST, 2);
     
-    // set the price of the size
-    if ($size == "Limited") {
-        $sizePrice = SIZE_LIMITED;
-    } elseif ($size == "Great") {
-        $sizePrice = SIZE_GREAT;
-    } elseif ($size == "Monster") {
-        $sizePrice = SIZE_MONSTER;
-    } else {
-        $sizePrice = 0;
-    }
-    // set the price of the meat
-    if ($meat == "Bacon") {
-        $meatPrice = MEAT_PRICE;
-    } elseif ($meat == "Pulled Pork") {
-        $meatPrice = MEAT_PRICE;
-    } elseif ($meat == "Ground Beef") {
-        $meatPrice = MEAT_PRICE;
-    } elseif ($meat == "Chicken Breast") {
-        $meatPrice = MEAT_PRICE;
-    } else {
-        $meatPrice = 0;
-    }
-    // set the price of the veggies
-    if ($veggies == "Caramelized onions") {
-        $veggiesPrice = VEGGIES_PRICE;
-    } elseif ($veggies == "Mushrooms") {
-        $veggiesPrice = VEGGIES_PRICE;
-    } elseif ($veggies == "Green Pepper") {
-        $veggiesPrice = VEGGIES_PRICE;
-    } elseif ($veggies == "Green Onions") {
-        $veggiesPrice = VEGGIES_PRICE;
-    } else {
-        $veggiesPrice = 0;
-    }
-    // set the price of the sauce
-    if ($sauce == "B.B.Q") {
-        $saucePrice = SAUCE_PRICE;
-    } elseif ($sauce == "Sweet Mustard") {
-        $saucePrice = SAUCE_PRICE;
-    } elseif ($sauce == "Garlic Mayo") {
-        $saucePrice = SAUCE_PRICE;
-    } elseif ($sauce == "Burger Sauce") {
-        $saucePrice = SAUCE_PRICE;
-    } else {
-        $saucePrice = 0;
-    }
-    // set the price of the extras
-    if ($extras == "Extra Cheese Curds") {
-        $extrasPrice = EXTRAS_PRICE;
-    } elseif ($extras == "Extra Gravy") {
-        $extrasPrice = EXTRAS_PRICE;
-    } elseif ($extras == "Gluten-Free Gravy") {
-        $extrasPrice = EXTRAS_PRICE;
-    } else {
-        $extrasPrice = 0;
-    }
 ?>
