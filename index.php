@@ -19,7 +19,7 @@
   <body>
     <h1>The Great Canadian Poutinerie Menu</h1>
     <main class="mdl-layout__content">
-      <table border="3" style="width:50%">
+      <table border="4" style="width:30%">
         <tr>
           <td>MENU</td>
         </tr>
@@ -32,7 +32,6 @@
           <td>Canadian</td>
           <td>Chicken Bacon Ranch</td>
         </tr>
-        <br>
         <tr>
           <td><img src="./images/b-mac.webp" sizes="5 x 5" alt="B-mac"></td>
           <td><img src="./images/Bacon-Cheese-Burger.webp" sizes="5 x 5" alt="Bacon Cheese Burger"></td>
@@ -54,7 +53,7 @@
     </form>
     
     <!-- iframe for the results to show on the web page. -->
-    <iframe id="results" name="results" style="width:100%; height:150px;">
+    <iframe id="results" name="results">
       <div id="user-info">
         <div id="$subtotal"></div>
         <div id="$hst"></div>
