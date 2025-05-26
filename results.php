@@ -6,67 +6,67 @@
     $size = $_POST['size'];
     $poutineType = $_POST['poutine-type'];
     
-    if ($size == "limited" && $poutineType == "b-mac") {
+    if ($size == "limited" || "Limited" || "LIMITED" && $poutineType == "b-mac" || "B-mac" || "B-MAC") {
         $poutinePrice = 14.25;
     }
-    elseif ($size == "great" && $poutineType == "b-mac") {
+    elseif ($size == "great" || "Great" || "GREAT" && $poutineType == "b-mac" || "B-mac" || "B-MAC") {
         $poutinePrice = 16.75;
     }
-    elseif ($size == "monster" && $poutineType == "b-mac") {
+    elseif ($size == "monster" || "Monster" || "MONSTER" && $poutineType == "b-mac" || "B-mac" || "B-MAC") {
         $poutinePrice = 19.25;
     }
-    elseif ($size == "limited" && $poutineType == "bacon cheese burger") {
+    elseif ($size == "limited" || "Limited" || "LIMITED" && $poutineType == "bacon cheese burger" || "Bacon Cheese Burger" || "BACON CHEESE BURGER") {
         $poutinePrice = 12.25;
     }
-    elseif ($size == "great" && $poutineType == "bacon cheese burger") {
+    elseif ($size == "great" || "Great" || "GREAT" && $poutineType == "bacon cheese burger" || "Bacon Cheese Burger" || "BACON CHEESE BURGER") {
         $poutinePrice = 14.75;
     }
-    elseif ($size == "monster" && $poutineType == "bacon cheese burger") {
+    elseif ($size == "monster" || "Monster" || "MONSTER" && $poutineType == "bacon cheese burger" || "Bacon Cheese Burger" || "BACON CHEESE BURGER") {
         $poutinePrice = 17.25;
     }
-    elseif ($size == "limited" && $poutineType == "beef omg") {
+    elseif ($size == "limited" || "Limited" ||"LIMITED" && $poutineType == "beef omg" || "Beef OMG" || "BEEF OMG") {
         $poutinePrice = 12.25;
     }
-    elseif ($size == "great" && $poutineType == "beef omg") {
+    elseif ($size == "great" || "Great" || "GREAT" && $poutineType == "beef omg" || "Beef OMG" || "BEEF OMG") {
         $poutinePrice = 14.75;
     }
-    elseif ($size == "monster" && $poutineType == "beef omg") {
+    elseif ($size == "monster" || "Monster" || "MONSTER" && $poutineType == "beef omg" || "Beef OMG" || "BEEF OMG") {
         $poutinePrice = 17.25;
     }
-    elseif ($size == "limited" && $poutineType == "buffalo chicken") {
+    elseif ($size == "limited" ||"Limited" || "LIMITED" && $poutineType == "buffalo chicken" || "Buffalo Chicken" || "BUFFALO CHICKEN") {
         $poutinePrice = 12.25;
     }
-    elseif ($size == "great" && $poutineType == "buffalo chicken") {
+    elseif ($size == "great" || "Great" || "GREAT" && $poutineType == "buffalo chicken" || "Buffalo Chicken" || "BUFFALO CHICKEN") {
         $poutinePrice = 14.75;
     }
-    elseif ($size == "monster" && $poutineType == "buffalo chicken") {
+    elseif ($size == "monster" || "Monster" || "MONSTER" && $poutineType == "buffalo chicken" || "Buffalo Chicken" || "BUFFALO CHICKEN") {
         $poutinePrice = 17.25;
     }
-    elseif ($size == "limited" && $poutineType == "butter chicken") {
+    elseif ($size == "limited" ||"Limited" || "LIMITED" && $poutineType == "butter chicken" || "Butter Chicken" || "BUTTER CHICKEN") {
         $poutinePrice = 12.25;
     }
-    elseif ($size == "great" && $poutineType == "butter chicken") {
+    elseif ($size == "great" || "Great" || "GREAT" && $poutineType == "butter chicken" || "Butter Chicken" || "BUTTER CHICKEN") {
         $poutinePrice = 14.75;
     }
-    elseif ($size == "monster" && $poutineType == "butter chicken") {
+    elseif ($size == "monster" || "Monster" || "MONSTER" && $poutineType == "butter chicken" || "Butter Chicken" || "BUTTER CHICKEN") {
         $poutinePrice = 17.25;
     }
-    elseif ($size == "limited" && $poutineType == "canadian") {
+    elseif ($size == "limited" ||"Limited" || "LIMITED" && $poutineType == "canadian" || "Canadian" || "CANADIAN") {
         $poutinePrice = 12.25;
     }
-    elseif ($size == "great" && $poutineType == "canadian") {
+    elseif ($size == "great" || "Great" || "GREAT" && $poutineType == "canadian" || "Canadian" || "CANADIAN") {
         $poutinePrice = 14.75;
     }
-    elseif ($size == "monster" && $poutineType == "canadian") {
+    elseif ($size == "monster" || "Monster" || "MONSTER" && $poutineType == "canadian" || "Canadian" || "CANADIAN") {
         $poutinePrice = 17.25;
     }
-    elseif ($size == "limited" && $poutineType == "chicken bacon ranch") {
+    elseif ($size == "limited" ||"Limited" || "LIMITED" && $poutineType == "chicken bacon ranch" || "Chicken Bacon Ranch" || "CHICKEN BACON RANCH") {
         $poutinePrice = 12.25;
     }
-    elseif ($size == "great" && $poutineType == "chicken bacon ranch") {
+    elseif ($size == "great" || "Great" || "GREAT" && $poutineType == "chicken bacon ranch" || "Chicken Bacon Ranch" || "CHICKEN BACON RANCH") {
         $poutinePrice = 14.75;
     }
-    elseif ($size == "monster" && $poutineType == "chicken bacon ranch") {
+    elseif ($size == "monster" || "Monster" || "MONSTER" && $poutineType == "chicken bacon ranch" || "Chicken Bacon Ranch" || "CHICKEN BACON RANCH") {
         $poutinePrice = 17.25;
     }
     else {
