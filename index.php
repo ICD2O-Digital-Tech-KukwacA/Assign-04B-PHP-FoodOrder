@@ -34,11 +34,23 @@
         </tr>
         <tr>
           <td><img src="./images/b-mac.webp" sizes="5 x 5" alt="B-mac"></td>
+        </tr>
+        <tr>
           <td><img src="./images/Bacon-Cheese-Burger.webp" sizes="5 x 5" alt="Bacon Cheese Burger"></td>
+        </tr>
+        <tr>
           <td><img src="./images/Beef-OMG.webp" sizes="5 x 5" alt="Beef OMG"></td>
+        </tr>
+        <tr>
           <td><img src="./images/Buffalo-Chicken.webp" sizes="5 x 5" alt="Buffalo Chicken"></td>
+        </tr>
+        <tr>
           <td><img src="./images/Butter-Chicken.webp" sizes="5 x 5" alt="Butter Chicken"></td>
+        </tr>
+        <tr>
           <td><img src="./images/canadian.webp" sizes="5 x 5" alt="Canadian"></td>
+        </tr>
+        <tr>
           <td><img src="./images/Chicken-Bacon-Ranch.webp" sizes="5 x 5" alt="Chicken Bacon Ranch"></td>
         </tr>
       </table>
