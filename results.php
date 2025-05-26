@@ -72,18 +72,4 @@
     else {
         $sizePrice = 0;
     }
-
-    // calculate the total price
-    $subtotal = $sizePrice + $meatPrice + $veggiesPrice + $saucePrice + $extrasPrice;
-    // calculate the HST
-    $hst = $subtotal * HST;
-    // calculate the total price with HST
-    $totalPriceWithHST = $subtotal + $hst;
-    // format the subtotal
-    $subtotal = number_format($subtotal, 2);
-    // format the HST
-    $hst = number_format($hst, 2);
-    // format the total price with HST
-    $totalPriceWithHST = number_format($totalPriceWithHST, 2);
-    
 ?>

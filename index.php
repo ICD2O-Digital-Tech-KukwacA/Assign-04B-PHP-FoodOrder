@@ -24,8 +24,33 @@
           <td>MENU</td>
         </tr>
         <tr>
-          <td><img src="./images/b-mac.webp" alt="B-mac"></td>
-          <td>$7.75</td>
+          <td>B-mac</td>
+          <td><img src="./images/b-mac.webp" sizes="24 x24" alt="B-mac"></td>
+        </tr>
+        <tr>
+          <td>$Bacon Cheese Burger</td>
+          <td><img src="./images/bacon-cheese-burger.webp" sizes="24 x24" alt="Bacon Cheese Burger"></td>
+        </tr>
+        <tr>
+          <td>Beef OMG</td>
+          <td><img src="./images/beef-omg.webp" sizes="24 x24" alt="Beef OMG"></td>
+        </tr>
+        <tr>
+          <td>Buffalo Chicken</td>
+          <td><img src="./images/buffalo-chicken.webp" sizes="24 x24" alt="Buffalo Chicken"></td>
+        </tr>
+        <tr>
+          <td>Butter Chicken</td>
+          <td><img src="./images/butter-chicken.webp" sizes="24 x24" alt="Butter Chicken"></td>
+        </tr>
+        <tr>
+          <td>Canadian</td>
+          <td><img src="./images/canadian.webp" sizes="24 x24" alt="Canadian"></td>
+        </tr>
+        <tr>
+          <td>Chicken Bacon Ranch</td>
+          <td><img src="./images/Chicken-Bacon-Ranch.webp" sizes="24 x24" alt="Chicken Bacon Ranch"></td>
+        </tr>
       </table>
     <!-- form to get the indexes of refraction from the user -->
     <form action="./results.php" method="post" target="results">
