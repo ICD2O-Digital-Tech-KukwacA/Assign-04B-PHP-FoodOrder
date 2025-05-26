@@ -25,31 +25,31 @@
         </tr>
         <tr>
           <td>B-mac</td>
-          <td><img src="./images/b-mac.webp" sizes="24 x24" alt="B-mac"></td>
+          <td><img src="./images/b-mac.webp" sizes="10 x 10" alt="B-mac"></td>
         </tr>
         <tr>
           <td>$Bacon Cheese Burger</td>
-          <td><img src="./images/bacon-cheese-burger.webp" sizes="24 x24" alt="Bacon Cheese Burger"></td>
+          <td><img src="./images/Bacon-Cheese-Burger.webp" sizes="10 x 10" alt="Bacon Cheese Burger"></td>
         </tr>
         <tr>
           <td>Beef OMG</td>
-          <td><img src="./images/beef-omg.webp" sizes="24 x24" alt="Beef OMG"></td>
+          <td><img src="./images/Beef-OMG.webp" sizes="10 x 10" alt="Beef OMG"></td>
         </tr>
         <tr>
           <td>Buffalo Chicken</td>
-          <td><img src="./images/buffalo-chicken.webp" sizes="24 x24" alt="Buffalo Chicken"></td>
+          <td><img src="./images/Buffalo-Chicken.webp" sizes="10 x 10" alt="Buffalo Chicken"></td>
         </tr>
         <tr>
           <td>Butter Chicken</td>
-          <td><img src="./images/butter-chicken.webp" sizes="24 x24" alt="Butter Chicken"></td>
+          <td><img src="./images/Butter-Chicken.webp" sizes="10 x 10" alt="Butter Chicken"></td>
         </tr>
         <tr>
           <td>Canadian</td>
-          <td><img src="./images/canadian.webp" sizes="24 x24" alt="Canadian"></td>
+          <td><img src="./images/canadian.webp" sizes="10 x 10" alt="Canadian"></td>
         </tr>
         <tr>
           <td>Chicken Bacon Ranch</td>
-          <td><img src="./images/Chicken-Bacon-Ranch.webp" sizes="24 x24" alt="Chicken Bacon Ranch"></td>
+          <td><img src="./images/Chicken-Bacon-Ranch.webp" sizes="10 x 10" alt="Chicken Bacon Ranch"></td>
         </tr>
       </table>
     <!-- form to get the indexes of refraction from the user -->
