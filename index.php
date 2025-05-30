@@ -19,25 +19,52 @@
   <body>
     <h1>The Great Canadian Poutinerie Menu</h1>
     <main class="mdl-layout__content">
-      <table border="4" style="width:30%">
+      <!--Menu-->
+      <h3>Menu</h3>
+      <table border=3 width=60%>
         <tr>
           <th>Poutine</th>
           <th>Description</th>
-          <th>Size</th>
+          <th>Sizes</th>
         </tr>
         <tr>
-          <td>B-mac</td>
-          <td>Fries, cheese curds, gravy, and a Big Mac</td>
-          <td>
-            <select name="poutine-type" id="poutine-type">
-              <option value="Limited">Limited</option>
-              <option value="Great">Great</option>
-              <option value="Monster">Monster</option>
-            </select>
-          </td>
-          <td>$14.25</td>
+          <td>Bacon cheese burger</td>
+          <td>Bacon, Ground Beef, & Melted Cheese</td>
+          <td>Limited</td>
+        </tr>
+        <tr>
+          <td>Beef OMG</td>
+          <td>Ground Beef, Caramelized Onions, Mushrooms, & Green Peppers</td>
+          <td>Great</td>
+        </tr>
+        <tr>
+          <td>Buffalo chicken</td>
+          <td>Popcorn Chicken, & Buffalo Sauce</td>
+          <td>Monster</td>
+        </tr>
+        <tr>
+          <td>Candian</td>
+          <td>Ground Beef, Caramelized Onions, Mushrooms, Bacon, & Maple Syrup</td>
+        </tr>
+        <tr>
+          <td>Original philly</td>
+          <td>Philly Steak, Caramelized Onions, Mushrooms, Green Peppers, & Melted Cheese</td>
+        </tr>
+        <tr>
+          <td>Pulled pork</td>
+          <td>Pulled Pork & B.B.Q. Sauce</td>
+        </tr>
+        <tr>
+          <td>Sauce Boss</td>
+          <td>Popcorn Chicken, B.B.Q. Sauce, Sweet Mustard, & Garlic Mayo</td>
+        </tr>
+        <tr>
+          <td>Sweet sriracha</td>
+          <td>Pulled Pork & Sweet Sriracha B.B.Q. Sauce</td>
         </tr>
       </table>
+      <h2>**Place your order as it is on the menu**</h2>
+      <br>
     <!-- form to get the indexes of refraction from the user -->
     <form action="./results.php" method="post" target="results">
       <h3>Place your order</h3>
@@ -52,7 +79,7 @@
     <iframe id="results" name="results">
       <div id="user-info">
         <div id="$subtotal"></div>
-        <div id="$hst"></div>
+        <div id="$tax"></div>
         <div id="$total"></div>
       </div>
     </iframe>
