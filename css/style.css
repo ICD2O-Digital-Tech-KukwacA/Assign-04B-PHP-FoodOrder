@@ -21,12 +21,10 @@ h1 {
     margin-left: 10%;
 }
 
-h3 {
-    background-color: #7e46d8;
+h2 {
+    background-color: #ff000098;
     text-align: center;
     padding: 20px;
-    width: 80%;
-    margin-left: 10%;
 }
 
 p {

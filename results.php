@@ -134,8 +134,8 @@
 ?>
 <?php
     echo "<h4>Order Summary</h4>";
-    echo "<p>Subtotal: $subtotal</p>";
-    echo "<p>HST: $tax</p>";
-    echo "<p>Total: $total</p>";
+    echo "<p>Subtotal: $" . number_format($subtotal, 2) . "</p>";
+    echo "<p>HST: $" . number_format($tax, 2) . "</p>";
+    echo "<p>Total: $" . number_format($total, 2) . "</p>";
     echo $display;
 ?>

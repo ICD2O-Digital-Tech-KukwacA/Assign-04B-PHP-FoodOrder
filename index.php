@@ -55,7 +55,7 @@
           <td>Pulled Pork & B.B.Q. Sauce</td>
         </tr>
         <tr>
-          <td>Sauce Boss</td>
+          <td>Sauce boss</td>
           <td>Popcorn Chicken, B.B.Q. Sauce, Sweet Mustard, & Garlic Mayo</td>
         </tr>
         <tr>
@@ -79,10 +79,10 @@
     <iframe id="results" name="results">
       <?php
       echo "<h4>Order Summary</h4>";
-      echo "<p>Subtotal: $subtotal</p>";
-      echo "<p>HST: $tax</p>";
-      echo "<p>Total: $total</p>";
-      echo $display;
+      echo "<p>Total: $" . number_format($total, 2) . "</p>";
+      echo "<p>HST: $" . number_format($tax, 2) . "</p>";
+      echo "<p>Total: $" . number_format($total, 2) . "</p>";
+      echo "<p>$display</p>";
       ?>
     </iframe>
   </body>
