@@ -74,14 +74,16 @@
       <input type="text" id="poutine" name="poutine"><br><br>
       <input type="submit" value="Calculate total">
     </form>
-    
+    <br>
     <!-- iframe for the results to show on the web page. -->
     <iframe id="results" name="results">
-      echo "<h4>Order Summary</h4>";
-      echo "<p>Total: $" . number_format($total, 2) . "</p>";
-      echo "<p>HST: $" . number_format($tax, 2) . "</p>";
-      echo "<p>Total: $" . number_format($total, 2) . "</p>";
-      echo "<p>$display</p>";
+      <h4>Order Summary</h4>";
+      <?php
+      echo "Subtotal: $"  . number_format($subtotal, 2);
+      echo "Tax: $" . number_format($tax, 2);
+      echo "Total: $" . number_format($total, 2);
+      echo "$display";
+      ?>
     </iframe>
   </body>
 </html>
