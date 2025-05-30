@@ -77,11 +77,13 @@
     
     <!-- iframe for the results to show on the web page. -->
     <iframe id="results" name="results">
-      <div id="user-info">
-        <div id="$subtotal"></div>
-        <div id="$tax"></div>
-        <div id="$total"></div>
-      </div>
+      <?php
+      echo "<h4>Order Summary</h4>";
+      echo "<p>Subtotal: $subtotal</p>";
+      echo "<p>HST: $tax</p>";
+      echo "<p>Total: $total</p>";
+      echo $display;
+      ?>
     </iframe>
   </body>
 </html>

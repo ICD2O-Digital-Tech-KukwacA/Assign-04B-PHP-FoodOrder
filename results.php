@@ -132,8 +132,10 @@
         $display = "<p>Invalid selection, please try again.</p>";
     }
 ?>
-<h4>Order Summary</h4>
-<p>Subtotal: <?php echo $subtotal; ?></p>
-<p>HST: <?php echo $tax; ?></p>
-<p>Total: <?php echo $total; ?></p>
-<p><?php echo $display; ?></p>
+<?php
+    echo "<h4>Order Summary</h4>";
+    echo "<p>Subtotal: $subtotal</p>";
+    echo "<p>HST: $tax</p>";
+    echo "<p>Total: $total</p>";
+    echo $display;
+?>
