@@ -21,37 +21,21 @@
     <main class="mdl-layout__content">
       <table border="4" style="width:30%">
         <tr>
-          <td>MENU</td>
+          <th>Poutine</th>
+          <th>Description</th>
+          <th>Size</th>
         </tr>
         <tr>
           <td>B-mac</td>
-          <td>$Bacon Cheese Burger</td>
-          <td>Beef OMG</td>
-          <td>Buffalo Chicken</td>
-          <td>Butter Chicken</td>
-          <td>Canadian</td>
-          <td>Chicken Bacon Ranch</td>
-        </tr>
-        <tr>
-          <td><img src="./images/b-mac.webp" sizes="5 x 5" alt="B-mac"></td>
-        </tr>
-        <tr>
-          <td><img src="./images/Bacon-Cheese-Burger.webp" sizes="5 x 5" alt="Bacon Cheese Burger"></td>
-        </tr>
-        <tr>
-          <td><img src="./images/Beef-OMG.webp" sizes="5 x 5" alt="Beef OMG"></td>
-        </tr>
-        <tr>
-          <td><img src="./images/Buffalo-Chicken.webp" sizes="5 x 5" alt="Buffalo Chicken"></td>
-        </tr>
-        <tr>
-          <td><img src="./images/Butter-Chicken.webp" sizes="5 x 5" alt="Butter Chicken"></td>
-        </tr>
-        <tr>
-          <td><img src="./images/canadian.webp" sizes="5 x 5" alt="Canadian"></td>
-        </tr>
-        <tr>
-          <td><img src="./images/Chicken-Bacon-Ranch.webp" sizes="5 x 5" alt="Chicken Bacon Ranch"></td>
+          <td>Fries, cheese curds, gravy, and a Big Mac</td>
+          <td>
+            <select name="poutine-type" id="poutine-type">
+              <option value="Limited">Limited</option>
+              <option value="Great">Great</option>
+              <option value="Monster">Monster</option>
+            </select>
+          </td>
+          <td>$14.25</td>
         </tr>
       </table>
     <!-- form to get the indexes of refraction from the user -->
@@ -59,8 +43,8 @@
       <h3>Place your order</h3>
       <label for="size">Size</label>
       <input type="text" id="size" name="size"><br><br>
-      <label for="poutine">Poutine type</label>
-      <input type="text" id="poutine-type" name="poutine"><br><br>
+      <label for="poutine">Poutine</label>
+      <input type="text" id="poutine" name="poutine"><br><br>
       <input type="submit" value="Calculate total">
     </form>
     
