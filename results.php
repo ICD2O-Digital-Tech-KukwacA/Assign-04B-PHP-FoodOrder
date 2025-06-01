@@ -132,8 +132,8 @@
         $display = "<p>Invalid selection, please try again.</p>";
     }
 ?>
-    "<h4>Order Summary</h4>";
-    echo "Subtotal: $"  . number_format($subtotal, 2);
-    echo "Tax: $" . number_format($tax, 2);
-    echo "Total: $" . number_format($total, 2);
-    echo "$display";
+    <h4>Order Summary</h4>;
+    "Subtotal: $" +  $subtotal.number_format($subtotal, 2);
+    "Tax: $" + $tax.number_format($tax, 2);
+    "Total: $" + $total.number_format($total, 2);
+    echo  $display;

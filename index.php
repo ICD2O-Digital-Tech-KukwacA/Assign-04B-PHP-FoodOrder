@@ -79,10 +79,10 @@
     <iframe id="results" name="results">
       <h4>Order Summary</h4>";
       <?php
-      echo "Subtotal: $"  . number_format($subtotal, 2);
-      echo "Tax: $" . number_format($tax, 2);
-      echo "Total: $" . number_format($total, 2);
-      echo "$display";
+      "Subtotal: $"  . number_format($subtotal, 2);
+      "Tax: $" . number_format($tax, 2);
+      "Total: $" . number_format($total, 2);
+      "$display";
       ?>
     </iframe>
   </body>
