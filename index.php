@@ -78,12 +78,12 @@
     <!-- iframe for the results to show on the web page. -->
     <iframe id="results" name="results">
       <h4>Order Summary</h4>";
-      <?php
-      "Subtotal: $"  . number_format($subtotal, 2);
-      "Tax: $" . number_format($tax, 2);
-      "Total: $" . number_format($total, 2);
-      "$display";
-      ?>
+      <div id="user-info">
+          <div id="subtotal"></div>
+          <div id="tax"></div>
+          <div id="total"></div>
+          <div id="display"></div>
+      </div>
     </iframe>
   </body>
 </html>

@@ -133,7 +133,7 @@
     }
 ?>
     <h4>Order Summary</h4>;
-    "Subtotal: $" +  $subtotal.number_format($subtotal, 2);
-    "Tax: $" + $tax.number_format($tax, 2);
-    "Total: $" + $total.number_format($total, 2);
-    echo  $display;
+    Subtotal: $<?php echo number_format($subtotal, 2); ?><br>
+    Tax: $<?php echo number_format($tax, 2); ?><br>
+    Total: $<?php echo number_format($total, 2); ?><br>
+    <?php echo $display; ?>
