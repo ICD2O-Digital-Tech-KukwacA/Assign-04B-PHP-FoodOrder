@@ -43,7 +43,7 @@
           <td>Monster</td>
         </tr>
         <tr>
-          <td>Candian</td>
+          <td>Canadian</td>
           <td>Ground Beef, Caramelized Onions, Mushrooms, Bacon, & Maple Syrup</td>
         </tr>
         <tr>
